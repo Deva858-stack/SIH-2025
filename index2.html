@@ -16,12 +16,38 @@
         <div class="hamburger-line"></div>
       </div>
       <div class="logo">KRUSHI ONE</div>
+      
+      <!-- Language Selection -->
+      <div class="language-selector">
+        <div class="language-dropdown">
+          <button class="language-btn" id="languageBtn">
+            <span class="language-flag">🌐</span>
+            <span class="language-text" id="currentLanguage">English</span>
+            <span class="language-arrow">▼</span>
+          </button>
+          <div class="language-menu" id="languageMenu">
+            <div class="language-option" data-lang="en">
+              <span class="language-flag">🇺🇸</span>
+              <span class="language-text">English</span>
+            </div>
+            <div class="language-option" data-lang="hi">
+              <span class="language-flag">🇮🇳</span>
+              <span class="language-text">हिन्दी</span>
+            </div>
+            <div class="language-option" data-lang="or">
+              <span class="language-flag">🇮🇳</span>
+              <span class="language-text">ଓଡ଼ିଆ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <ul class="nav-links">
-        <li><a href="index2.html">Home</a></li>
-        <li><a href="mycrop.html">My crop</a></li>
-        <li><a href="recommendations.html">Recommendations </a></li>
-        <li><a href="prediction.html">Prediction</a></li>
-        <li><a href="sell.html">Sell</a></li>
+        <li><a href="index2.html" data-translate="nav-home">Home</a></li>
+        <li><a href="mycrop.html" data-translate="nav-mycrop">My crop</a></li>
+        <li><a href="recommendations.html" data-translate="nav-recommendations">Recommendations </a></li>
+        <li><a href="prediction.html" data-translate="nav-prediction">Prediction</a></li>
+        <li><a href="sell.html" data-translate="nav-sell">Sell</a></li>
       </ul>
     </div>
   </nav>
@@ -31,67 +57,67 @@
     <!-- Welcome Section -->
     <div class="welcome-section">
       <!-- <h1>KRUSHI ONE  Dashboard</h1> -->
-      <p>Your comprehensive agricultural monitoring platform</p>
+      <p data-translate="welcome-subtitle">Your comprehensive agricultural monitoring platform</p>
     </div>
 
     <!-- Current Temperature Indicator -->
     <div class="temperature-indicator">
-      <h2> Today's Weather</h2>
+      <h2 data-translate="weather-title"> Today's Weather</h2>
       <div class="current-temp">
         <div class="temp-value">32°</div>
         <div class="temp-unit">C</div>
       </div>
       <div class="temp-details">
-        <p>🔥 Hot & Humid • Feels like 36°C</p>
-        <p>💧 Humidity: 78% • 💨 Wind: 12 km/h</p>
+        <p data-translate="weather-hot">🔥 Hot & Humid • Feels like 36°C</p>
+        <p data-translate="weather-humidity">💧 Humidity: 78% • 💨 Wind: 12 km/h</p>
       </div>
     </div>
 
     <!-- 7-Day Forecast -->
     <div class="forecast-section">
-      <h2> 7-Day Weather Forecast</h2>
+      <h2 data-translate="forecast-title"> 7-Day Weather Forecast</h2>
       <div class="forecast-grid">
         <div class="forecast-day">
-          <div class="day-name">Today</div>
+          <div class="day-name" data-translate="forecast-today">Today</div>
           <div class="day-icon">🔥</div>
           <div class="day-temp">32°C</div>
-          <div class="day-desc">Hot & Humid</div>
+          <div class="day-desc" data-translate="forecast-hot">Hot & Humid</div>
         </div>
         <div class="forecast-day">
-          <div class="day-name">Tomorrow</div>
+          <div class="day-name" data-translate="forecast-tomorrow">Tomorrow</div>
           <div class="day-icon">☀️</div>
           <div class="day-temp">34°C</div>
-          <div class="day-desc">Very Hot</div>
+          <div class="day-desc" data-translate="forecast-very-hot">Very Hot</div>
         </div>
         <div class="forecast-day">
-          <div class="day-name">Wed</div>
+          <div class="day-name" data-translate="forecast-wed">Wed</div>
           <div class="day-icon">⛈️</div>
           <div class="day-temp">30°C</div>
-          <div class="day-desc">Thunderstorm</div>
+          <div class="day-desc" data-translate="forecast-thunderstorm">Thunderstorm</div>
         </div>
         <div class="forecast-day">
-          <div class="day-name">Thu</div>
+          <div class="day-name" data-translate="forecast-thu">Thu</div>
           <div class="day-icon">🌧️</div>
           <div class="day-temp">28°C</div>
-          <div class="day-desc">Heavy Rain</div>
+          <div class="day-desc" data-translate="forecast-heavy-rain">Heavy Rain</div>
         </div>
         <div class="forecast-day">
-          <div class="day-name">Fri</div>
+          <div class="day-name" data-translate="forecast-fri">Fri</div>
           <div class="day-icon">☁️</div>
           <div class="day-temp">31°C</div>
-          <div class="day-desc">Humid</div>
+          <div class="day-desc" data-translate="forecast-humid">Humid</div>
         </div>
         <div class="forecast-day">
-          <div class="day-name">Sat</div>
+          <div class="day-name" data-translate="forecast-sat">Sat</div>
           <div class="day-icon">🌤️</div>
           <div class="day-temp">33°C</div>
-          <div class="day-desc">Hot</div>
+          <div class="day-desc" data-translate="forecast-hot-weather">Hot</div>
         </div>
         <div class="forecast-day">
-          <div class="day-name">Sun</div>
+          <div class="day-name" data-translate="forecast-sun">Sun</div>
           <div class="day-icon">🌡️</div>
           <div class="day-temp">35°C</div>
-          <div class="day-desc">Scorching</div>
+          <div class="day-desc" data-translate="forecast-scorching">Scorching</div>
         </div>
       </div>
     </div>
@@ -140,26 +166,26 @@
       <div class="nav-cards-grid">
         <a href="mycrop.html" class="nav-card mycrop-card">
           <!-- <div class="nav-card-icon">🌾</div> -->
-          <h3>My Crop</h3>
-          <p>Manage your crops and track growth</p>
+          <h3 data-translate="card-mycrop">My Crop</h3>
+          <p data-translate="card-mycrop-desc">Manage your crops and track growth</p>
         </a>
         
         <a href="recommendations.html" class="nav-card recommendations-card">
           <!-- <div class="nav-card-icon">💡</div> -->
-          <h3>Recommendations</h3>
-          <p>Get expert farming advice</p>
+          <h3 data-translate="card-recommendations">Recommendations</h3>
+          <p data-translate="card-recommendations-desc">Get expert farming advice</p>
         </a>
         
         <a href="prediction.html" class="nav-card prediction-card">
           <!-- <div class="nav-card-icon">🔮</div> -->
-          <h3>Prediction</h3>
-          <p>Weather and yield predictions</p>
+          <h3 data-translate="card-prediction">Prediction</h3>
+          <p data-translate="card-prediction-desc">Weather and yield predictions</p>
         </a>
         
         <a href="sell.html" class="nav-card sell-card">
           <!-- <div class="nav-card-icon">💰</div> -->
-          <h3>Sell</h3>
-          <p>Market your produce</p>
+          <h3 data-translate="card-sell">Sell</h3>
+          <p data-translate="card-sell-desc">Market your produce</p>
         </a>
       </div>
     </div>
@@ -182,31 +208,31 @@
       <!-- Middle Section - Navigation Links -->
       <div class="footer-links">
         <div class="footer-column">
-          <h4 class="footer-heading">Product</h4>
+          <h4 class="footer-heading" data-translate="footer-product">Product</h4>
           <ul class="footer-list">
-            <li><a href="mycrop.html">My Crop</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-            <li><a href="prediction.html">Prediction</a></li>
-            <li><a href="sell.html">Sell</a></li>
+            <li><a href="mycrop.html" data-translate="card-mycrop">My Crop</a></li>
+            <li><a href="recommendations.html" data-translate="card-recommendations">Recommendations</a></li>
+            <li><a href="prediction.html" data-translate="card-prediction">Prediction</a></li>
+            <li><a href="sell.html" data-translate="card-sell">Sell</a></li>
           </ul>
         </div>
         
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <h4 class="footer-heading" data-translate="footer-company">Company</h4>
           <ul class="footer-list">
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#about" data-translate="footer-about">About Us</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact" data-translate="footer-contact">Contact Us</a></li>
             <li><a href="#careers">Careers</a></li>
           </ul>
         </div>
         
         <div class="footer-column">
-          <h4 class="footer-heading">Support</h4>
+          <h4 class="footer-heading" data-translate="footer-support">Support</h4>
           <ul class="footer-list">
-            <li><a href="#help">Help Center</a></li>
-            <li><a href="#terms">Terms & Conditions</a></li>
-            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#help" data-translate="footer-help">Help Center</a></li>
+            <li><a href="#terms" data-translate="footer-terms">Terms & Conditions</a></li>
+            <li><a href="#privacy" data-translate="footer-privacy">Privacy Policy</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
@@ -255,7 +281,7 @@
       <a href="mycrop.html" class="mobile-menu-card">
         <div class="mobile-menu-card-icon">🌾</div>
         <div class="mobile-menu-card-content">
-          <h4>My Crop</h4>
+          <h4 data-translate="card-mycrop">My Crop</h4>
         </div>
       </a>
     </div>
@@ -264,7 +290,7 @@
       <a href="recommendations.html" class="mobile-menu-card">
         <div class="mobile-menu-card-icon">💡</div>
         <div class="mobile-menu-card-content">
-          <h4>Recommendations</h4>
+          <h4 data-translate="card-recommendations">Recommendations</h4>
         </div>
       </a>
     </div>
@@ -273,7 +299,7 @@
       <a href="prediction.html" class="mobile-menu-card">
         <div class="mobile-menu-card-icon">🔮</div>
         <div class="mobile-menu-card-content">
-          <h4>Prediction</h4>
+          <h4 data-translate="card-prediction">Prediction</h4>
         </div>
       </a>
     </div>
@@ -282,9 +308,28 @@
       <a href="sell.html" class="mobile-menu-card">
         <div class="mobile-menu-card-icon">💰</div>
         <div class="mobile-menu-card-content">
-          <h4>Sell</h4>
+          <h4 data-translate="card-sell">Sell</h4>
         </div>
       </a>
+    </div>
+    
+    <!-- Mobile Language Selector -->
+    <div class="mobile-language-section">
+      <h4 class="mobile-language-title" data-translate="language-title">Language / भाषा / ଭାଷା</h4>
+      <div class="mobile-language-options">
+        <button class="mobile-language-btn" data-lang="en">
+          <span class="language-flag">🇺🇸</span>
+          <span class="language-text">English</span>
+        </button>
+        <button class="mobile-language-btn" data-lang="hi">
+          <span class="language-flag">🇮🇳</span>
+          <span class="language-text">हिन्दी</span>
+        </button>
+        <button class="mobile-language-btn" data-lang="or">
+          <span class="language-flag">🇮🇳</span>
+          <span class="language-text">ଓଡ଼ିଆ</span>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -372,6 +417,277 @@
       };
 
       console.log('Mobile menu ready!');
+    });
+
+    // Translation Data
+    const translations = {
+      en: {
+        // Navigation
+        'nav-home': 'Home',
+        'nav-mycrop': 'My crop',
+        'nav-recommendations': 'Recommendations',
+        'nav-prediction': 'Prediction',
+        'nav-sell': 'Sell',
+        'language-title': 'Language / भाषा / ଭାଷା',
+        
+        // Main Content
+        'welcome-subtitle': 'Your comprehensive agricultural monitoring platform',
+        'weather-title': 'Today\'s Weather',
+        'weather-hot': 'Hot & Humid • Feels like 36°C',
+        'weather-humidity': 'Humidity: 78% • Wind: 12 km/h',
+        'forecast-title': '7-Day Weather Forecast',
+        'forecast-today': 'Today',
+        'forecast-tomorrow': 'Tomorrow',
+        'forecast-wed': 'Wed',
+        'forecast-thu': 'Thu',
+        'forecast-fri': 'Fri',
+        'forecast-sat': 'Sat',
+        'forecast-sun': 'Sun',
+        'forecast-hot': 'Hot & Humid',
+        'forecast-very-hot': 'Very Hot',
+        'forecast-thunderstorm': 'Thunderstorm',
+        'forecast-heavy-rain': 'Heavy Rain',
+        'forecast-humid': 'Humid',
+        'forecast-hot-weather': 'Hot',
+        'forecast-scorching': 'Scorching',
+        
+        // Cards
+        'card-mycrop': 'My Crop',
+        'card-recommendations': 'Recommendations',
+        'card-prediction': 'Prediction',
+        'card-sell': 'Sell',
+        'card-mycrop-desc': 'Track your crops and their growth stages',
+        'card-recommendations-desc': 'Get personalized crop recommendations',
+        'card-prediction-desc': 'Weather and yield predictions',
+        'card-sell-desc': 'Sell your produce in the marketplace',
+        
+        // Footer
+        'footer-product': 'Product',
+        'footer-company': 'Company',
+        'footer-support': 'Support',
+        'footer-features': 'Features',
+        'footer-pricing': 'Pricing',
+        'footer-about': 'About Us',
+        'footer-contact': 'Contact',
+        'footer-help': 'Help Center',
+        'footer-privacy': 'Privacy Policy',
+        'footer-terms': 'Terms of Service'
+      },
+      hi: {
+        // Navigation
+        'nav-home': 'होम',
+        'nav-mycrop': 'मेरी फसल',
+        'nav-recommendations': 'सुझाव',
+        'nav-prediction': 'भविष्यवाणी',
+        'nav-sell': 'बेचें',
+        'language-title': 'Language / भाषा / ଭାଷା',
+        
+        // Main Content
+        'welcome-subtitle': 'आपका व्यापक कृषि निगरानी प्लेटफॉर्म',
+        'weather-title': 'आज का मौसम',
+        'weather-hot': 'गर्म और आर्द्र • 36°C जैसा लगता है',
+        'weather-humidity': 'आर्द्रता: 78% • हवा: 12 किमी/घं',
+        'forecast-title': '7-दिन का मौसम पूर्वानुमान',
+        'forecast-today': 'आज',
+        'forecast-tomorrow': 'कल',
+        'forecast-wed': 'बुध',
+        'forecast-thu': 'गुरु',
+        'forecast-fri': 'शुक्र',
+        'forecast-sat': 'शनि',
+        'forecast-sun': 'रवि',
+        'forecast-hot': 'गर्म और आर्द्र',
+        'forecast-very-hot': 'बहुत गर्म',
+        'forecast-thunderstorm': 'तूफान',
+        'forecast-heavy-rain': 'भारी बारिश',
+        'forecast-humid': 'आर्द्र',
+        'forecast-hot-weather': 'गर्म',
+        'forecast-scorching': 'तपता हुआ',
+        
+        // Cards
+        'card-mycrop': 'मेरी फसल',
+        'card-recommendations': 'सुझाव',
+        'card-prediction': 'भविष्यवाणी',
+        'card-sell': 'बेचें',
+        'card-mycrop-desc': 'अपनी फसलों और उनकी वृद्धि अवस्थाओं को ट्रैक करें',
+        'card-recommendations-desc': 'व्यक्तिगत फसल सुझाव प्राप्त करें',
+        'card-prediction-desc': 'मौसम और उपज भविष्यवाणी',
+        'card-sell-desc': 'बाजार में अपनी उपज बेचें',
+        
+        // Footer
+        'footer-product': 'उत्पाद',
+        'footer-company': 'कंपनी',
+        'footer-support': 'सहायता',
+        'footer-features': 'विशेषताएं',
+        'footer-pricing': 'मूल्य निर्धारण',
+        'footer-about': 'हमारे बारे में',
+        'footer-contact': 'संपर्क',
+        'footer-help': 'सहायता केंद्र',
+        'footer-privacy': 'गोपनीयता नीति',
+        'footer-terms': 'सेवा की शर्तें'
+      },
+      or: {
+        // Navigation
+        'nav-home': 'ଘର',
+        'nav-mycrop': 'ମୋର ଫସଲ',
+        'nav-recommendations': 'ପରାମର୍ଶ',
+        'nav-prediction': 'ଭବିଷ୍ୟତବାଣୀ',
+        'nav-sell': 'ବିକ୍ରୟ',
+        'language-title': 'Language / भाषा / ଭାଷା',
+        
+        // Main Content
+        'welcome-subtitle': 'ଆପଣଙ୍କର ସମ୍ପୂର୍ଣ୍ଣ କୃଷି ନିରୀକ୍ଷଣ ପ୍ଲାଟଫର୍ମ',
+        'weather-title': 'ଆଜିର ପାଣିପାଗ',
+        'weather-hot': 'ଗରମ ଏବଂ ଆର୍ଦ୍ର • ୩୬°C ଭଳି ଲାଗୁଛି',
+        'weather-humidity': 'ଆର୍ଦ୍ରତା: ୭୮% • ବାୟୁ: ୧୨ କିମି/ଘଣ୍ଟା',
+        'forecast-title': '୭-ଦିନର ପାଣିପାଗ ପୂର୍ବାନୁମାନ',
+        'forecast-today': 'ଆଜି',
+        'forecast-tomorrow': 'କାଲି',
+        'forecast-wed': 'ବୁଧ',
+        'forecast-thu': 'ଗୁରୁ',
+        'forecast-fri': 'ଶୁକ୍ର',
+        'forecast-sat': 'ଶନି',
+        'forecast-sun': 'ରବି',
+        'forecast-hot': 'ଗରମ ଏବଂ ଆର୍ଦ୍ର',
+        'forecast-very-hot': 'ବହୁତ ଗରମ',
+        'forecast-thunderstorm': 'ଝଡ଼',
+        'forecast-heavy-rain': 'ଭାରି ବର୍ଷା',
+        'forecast-humid': 'ଆର୍ଦ୍ର',
+        'forecast-hot-weather': 'ଗରମ',
+        'forecast-scorching': 'ଜଳୁଥିବା',
+        
+        // Cards
+        'card-mycrop': 'ମୋର ଫସଲ',
+        'card-recommendations': 'ପରାମର୍ଶ',
+        'card-prediction': 'ଭବିଷ୍ୟତବାଣୀ',
+        'card-sell': 'ବିକ୍ରୟ',
+        'card-mycrop-desc': 'ଆପଣଙ୍କର ଫସଲ ଏବଂ ସେମାନଙ୍କର ବୃଦ୍ଧି ଅବସ୍ଥା ଟ୍ରାକ୍ କରନ୍ତୁ',
+        'card-recommendations-desc': 'ବ୍ୟକ୍ତିଗତ ଫସଲ ପରାମର୍ଶ ପ୍ରାପ୍ତ କରନ୍ତୁ',
+        'card-prediction-desc': 'ପାଣିପାଗ ଏବଂ ଫଳ ଭବିଷ୍ୟତବାଣୀ',
+        'card-sell-desc': 'ବଜାରରେ ଆପଣଙ୍କର ଉତ୍ପାଦ ବିକ୍ରୟ କରନ୍ତୁ',
+        
+        // Footer
+        'footer-product': 'ଉତ୍ପାଦ',
+        'footer-company': 'କମ୍ପାନୀ',
+        'footer-support': 'ସହାୟତା',
+        'footer-features': 'ବିଶେଷତା',
+        'footer-pricing': 'ମୂଲ୍ୟ ନିର୍ଦ୍ଧାରଣ',
+        'footer-about': 'ଆମ ବିଷୟରେ',
+        'footer-contact': 'ଯୋଗାଯୋଗ',
+        'footer-help': 'ସହାୟତା କେନ୍ଦ୍ର',
+        'footer-privacy': 'ଗୋପନୀୟତା ନୀତି',
+        'footer-terms': 'ସେବାର ଶର୍ତ୍ତ'
+      }
+    };
+
+    // Translation Function
+    function translatePage(lang) {
+      const elements = document.querySelectorAll('[data-translate]');
+      elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    // Language Selector Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const languageBtn = document.getElementById('languageBtn');
+      const languageMenu = document.getElementById('languageMenu');
+      const currentLanguage = document.getElementById('currentLanguage');
+      const languageOptions = document.querySelectorAll('.language-option');
+      const mobileLanguageBtns = document.querySelectorAll('.mobile-language-btn');
+
+      // Desktop language dropdown toggle
+      if (languageBtn && languageMenu) {
+        languageBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          languageMenu.classList.toggle('active');
+          languageBtn.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!languageBtn.contains(e.target) && !languageMenu.contains(e.target)) {
+            languageMenu.classList.remove('active');
+            languageBtn.classList.remove('active');
+          }
+        });
+
+        // Language option selection
+        languageOptions.forEach(option => {
+          option.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            const text = this.querySelector('.language-text').textContent;
+            const flag = this.querySelector('.language-flag').textContent;
+            
+            // Update current language display
+            currentLanguage.textContent = text;
+            languageBtn.querySelector('.language-flag').textContent = flag;
+            
+            // Update selected state
+            languageOptions.forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+            
+            // Close dropdown
+            languageMenu.classList.remove('active');
+            languageBtn.classList.remove('active');
+            
+            // Store language preference
+            localStorage.setItem('selectedLanguage', lang);
+            
+            // Translate the page
+            translatePage(lang);
+            
+            console.log('Language changed to:', lang);
+          });
+        });
+      }
+
+      // Mobile language selection
+      mobileLanguageBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const lang = this.getAttribute('data-lang');
+          const text = this.querySelector('.language-text').textContent;
+          
+          // Update selected state
+          mobileLanguageBtns.forEach(b => b.classList.remove('selected'));
+          this.classList.add('selected');
+          
+          // Store language preference
+          localStorage.setItem('selectedLanguage', lang);
+          
+          // Translate the page
+          translatePage(lang);
+          
+          console.log('Mobile language changed to:', lang);
+        });
+      });
+
+      // Load saved language preference
+      const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+      const savedOption = document.querySelector(`[data-lang="${savedLanguage}"]`);
+      if (savedOption) {
+        const text = savedOption.querySelector('.language-text').textContent;
+        const flag = savedOption.querySelector('.language-flag').textContent;
+        
+        // Update desktop display
+        if (currentLanguage) {
+          currentLanguage.textContent = text;
+          languageBtn.querySelector('.language-flag').textContent = flag;
+        }
+        
+        // Update selected states
+        languageOptions.forEach(opt => opt.classList.remove('selected'));
+        mobileLanguageBtns.forEach(btn => btn.classList.remove('selected'));
+        
+        savedOption.classList.add('selected');
+        const mobileBtn = document.querySelector(`.mobile-language-btn[data-lang="${savedLanguage}"]`);
+        if (mobileBtn) mobileBtn.classList.add('selected');
+        
+        // Translate the page on load
+        translatePage(savedLanguage);
+      }
     });
   </script>
 </body>
